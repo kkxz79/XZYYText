@@ -4,4 +4,5 @@ inhibit_all_warnings!
 
 target:"XZYYText" do
     pod 'YYText'
+     pod 'YYImage'
 end

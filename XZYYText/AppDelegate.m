@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "XZTextExampleTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    XZTextExampleTableViewController *exVC = [[XZTextExampleTableViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:exVC];
+    self.window.rootViewController = nav;
     return YES;
 }
 
